@@ -10,15 +10,15 @@
  * please view the LICENSE file that was distributed with this source code.
  */
 
-namespace WellCommerce\Bundle\NewsBundle\Manager\Admin;
+namespace WellCommerce\Bundle\NewsBundle\Manager;
 
-use WellCommerce\Bundle\CoreBundle\Manager\Admin\AbstractAdminManager;
+use WellCommerce\Bundle\CoreBundle\Manager\AbstractManager;
 
 /**
  * Class NewsManager
  *
  * @author  Adam Piotrowski <adam@wellcommerce.org>
  */
-class NewsManager extends AbstractAdminManager
+class NewsManager extends AbstractManager
 {
 }
