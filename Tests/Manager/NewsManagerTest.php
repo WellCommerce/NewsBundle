@@ -13,10 +13,6 @@
 namespace WellCommerce\Bundle\NewsBundle\Tests\Manager;
 
 use WellCommerce\Bundle\CoreBundle\Test\Manager\AbstractManagerTestCase;
-use WellCommerce\Bundle\DoctrineBundle\Manager\Manager;
-use WellCommerce\Bundle\DoctrineBundle\Manager\ManagerInterface;
-use WellCommerce\Bundle\NewsBundle\Factory\NewsFactory;
-use WellCommerce\Bundle\NewsBundle\Repository\NewsRepositoryInterface;
 
 /**
  * Class NewsManagerTest
@@ -25,18 +21,8 @@ use WellCommerce\Bundle\NewsBundle\Repository\NewsRepositoryInterface;
  */
 class NewsManagerTest extends AbstractManagerTestCase
 {
-    protected function get() : ManagerInterface
+    protected function get()
     {
         return $this->container->get('news.manager');
-    }
-
-    protected function getRepositoryInterfaceName()
-    {
-        return NewsRepositoryInterface::class;
-    }
-
-    protected function getFactoryInterfaceName() : string
-    {
-        return NewsFactory::class;
     }
 }
